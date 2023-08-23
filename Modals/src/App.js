@@ -1,5 +1,6 @@
 import { Modal } from "./Modal";
 import { LargeProductListItem } from "./products/LargeProductListItem";
+import {LargePersonListItem} from './people/LargePersonListItem'
 
 
 const people = [{
@@ -41,6 +42,7 @@ function App() {
 		<>
 		<Modal>
 			<LargeProductListItem product={products[0]}/>
+			<LargePersonListItem person={people[0]}/>
 		</Modal>
 		</>
 	);
