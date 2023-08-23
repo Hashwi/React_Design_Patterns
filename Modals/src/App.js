@@ -1,10 +1,6 @@
 import { Modal } from "./Modal";
-import { NumberedList } from "./NumberedList";
-import { LargePersonListItem } from "./people/LargePersonListItem";
-import { SmallPersonListItem } from "./people/SmallPersonListItem";
 import { LargeProductListItem } from "./products/LargeProductListItem";
-import { SmallProductListItem } from "./products/SmallProductListItem";
-import { RegularList } from "./RegularList";
+
 
 const people = [{
 	name: 'John Doe',
