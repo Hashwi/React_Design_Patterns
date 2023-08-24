@@ -55,6 +55,12 @@ function App() {
         resourceName="product">
         <ProductInfo />
       </DataSource>
+
+	  <DataSource
+        getDataFunc={getLoaclStorageData('message')}
+        resourceName="message">
+        <Text />
+      </DataSource>
     </>
   );
 }
