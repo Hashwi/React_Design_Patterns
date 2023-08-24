@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 Containers/node_modules
 Modals/node_modules
+Components/node_modules
+Lists/node_modules
