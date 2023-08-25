@@ -1,12 +1,15 @@
 
-import {UserInfo} from './UserInfo'
-import { withUser } from "./withUser";
+// import {UserInfo} from './UserInfo'
+import { UserInfoForm } from './UserInfoForm';
+// import { withUser } from "./withUser";
 
-const UserInfoWrapper = withUser(UserInfo, '234')
+// const UserInfoWrapper = withUser(UserInfo, '234')
 
 function App() {
 	return (
-		<UserInfoWrapper />
+		// <UserInfoWrapper />
+
+		<UserInfoForm/>
 	);
 }
 
