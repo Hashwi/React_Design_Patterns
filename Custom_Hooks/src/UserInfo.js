@@ -1,6 +1,7 @@
 import { useCurrentUser } from "./useCurrentUser";
 
 export const UserInfo = () => {
+	console.log(12)
 	const user = useCurrentUser();
 
 	const { name, age, hairColor, hobbies } = user || {};

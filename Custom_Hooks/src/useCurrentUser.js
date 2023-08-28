@@ -8,7 +8,8 @@ export const useCurrentUser = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axios.get('/current-user'); 
+        console.log(234)
+        const response = await axios.get('./current-user'); 
         setUser(response.data);
         console.log(response.data)
       } catch (error) {
