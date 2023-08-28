@@ -1,13 +1,26 @@
 // import { useCurrentUser } from "./useCurrentUser";
-import { useResource } from "./useResource";
-import { useUser } from "./useUser";
+import axios from 'axios'
+// import { useResource } from "./useResource";
+// import { useUser } from "./useUser";
+import { useDataSource } from "./useData";
+
+const serverResource = resourceUrl => async ()=> {
+	const response = await axios.get(resourceUrl)
+	return response.data
+}
+
+const localStorageResource = key => () => {
+	return localStorage.getItem(key)
+}
 
 export const UserInfo = ({userId}) => {
-	console.log(123)
-	const user = useResource(`/users/${userId}`)
+	
+	// const user = useResource(`/users/${userId}`)
+	const user = useDataSource(serverResource(`/users/${userId}`))
+	const message =useDataSource(localStorageResource('message'))
 
 	const { name, age, hairColor, hobbies } = user || {};
-	console.log(user)
+	
 	return user ? (
 		
 		<>
